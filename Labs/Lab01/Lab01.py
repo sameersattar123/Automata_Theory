@@ -1,7 +1,7 @@
 import re
 
 def checkStartAndEndString(str):
-    if re.search("^apple.*abc$", str):
+    if re.search(r"^apple.*abc$", str):
         print("Match Found")
     else:
         print("Match Not Found")
