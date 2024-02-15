@@ -7,4 +7,3 @@ def checkStartAndEndString(str):
         print("Match Not Found")
     
 checkStartAndEndString("apple abc") # Match Found
-checkStartAndEndString("apple abc") # Match Found
