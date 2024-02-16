@@ -28,14 +28,21 @@ if re.search(r"\S{2}\d{2}\S{4}\d{16}" , banKAccountNumber):
 else:
     print("Incorrect Account Number")
 
-# User Password
+# data format 
 
-Password = "Pk36SCBL0000001123456702"
+date = "2016-06-10"
 
-if re.search(r"\S{1}\d{2}\S{4}\d{16}" , Password):
-     print("It is a verified Password")
+if re.search(r"\b(19\d\d|20\d\d)-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])\b" , date):
+     print("It is a verified  date format")
 else:
-    print("Incorrect Password")
+    print("Incorrect date format")
+
+# User Email
+    
+email = "sameersattar@gmail.com kashif@gmail.com ali@gmail.com"
+
+print(re.findall(r"[\w._%]{0,20}@[\w-].[A-Za-z]{2,3}", email))
+print(len(re.findall(r"[\w._%]{0,20}@[\w-].[A-Za-z]{2,3}", email)))
 
 
 
